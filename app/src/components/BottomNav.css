@@ -1,0 +1,22 @@
+.bottom-nav {
+  position: sticky;
+  bottom: 0;
+  display: flex;
+  background: var(--surface);
+  border-top: 1px solid var(--border);
+  padding: 6px 0 max(6px, env(safe-area-inset-bottom));
+  z-index: 20;
+}
+.nav-item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  text-decoration: none;
+  color: var(--text-dim);
+  font-size: 11px;
+}
+.nav-item.active { color: var(--accent); }
+.nav-icon { font-size: 20px; filter: grayscale(0.4); }
+.nav-item.active .nav-icon { filter: none; }
