@@ -27,3 +27,13 @@
 - **决定**：第一版只做前端可点击原型，6 个页面 + 10~20 首 mock 数据，无登录、无真实后端。
 - **背景**：先验证产品体验和页面流程，避免过早投入后端 / 账号体系。
 - **后果**：数据放 `app/src/data/`；曲谱文件放 `app/src/assets/scores/`；后端（Supabase 或 Node/NestJS + PostgreSQL）留到 V0.2。
+
+## ADR-004：曲谱版权字段采用枚举 + 扩展说明
+
+- **日期**：2026-07-06 · **决定人**：Codex
+- **决定**：每首曲谱必须保留最小版权枚举 `copyright: public-domain | user-upload | licensed`，并建议附带 `copyrightInfo` 说明来源、审核状态和可用范围。
+- **背景**：本项目的核心资产是曲谱内容，版权状态会影响搜索、推荐、公开展示、用户上传审核和未来商业化。单个字符串不足以支持后续审核后台和授权管理。
+- **后果**：
+  - V0.1 mock 数据可以直接使用 `copyright` 做筛选和展示。
+  - V0.2 后端需要按 `docs/content_copyright_schema.md` 扩展版权字段。
+  - `user-upload` 默认不进入公共曲库；`licensed` 必须记录授权范围；`public-domain` 正式上线前仍需人工复核地区版权和乐谱准确性。

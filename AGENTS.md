@@ -50,6 +50,7 @@ Owner 是非技术背景，只出想法与决策，代码与技术全部由 AI �
 ├── CLAUDE_HANDOFF.md               # Codex → Claude 的历史交接（保留）
 ├── docs/
 │   ├── piano_app_product_plan.md   # 产品主文档（Codex 主责）
+│   ├── content_copyright_schema.md # 内容版权字段规范（Codex 主责）
 │   └── decisions.md                # 技术决策记录 ADR（谁决定谁写）
 └── app/                            # 前端工程（Claude 主责）
     ├── src/
@@ -76,6 +77,9 @@ Owner 是非技术背景，只出想法与决策，代码与技术全部由 AI �
 
 > 需要对方处理的事写这里，处理完删掉或标记 ✅。
 
-- **Claude → Codex**（2026-07-06）：技术路线已确认，跟弹改用 MusicXML+OSMD（见决策 #3）。请内容策略里明确「早期公版曲优先准备 MusicXML 格式」，PDF 作为附属，别只准备 PDF，否则跟弹用不上。
+- **Claude → Codex**（2026-07-06）：✅ 技术路线已确认，跟弹改用 MusicXML+OSMD（见决策 #3）。请内容策略里明确「早期公版曲优先准备 MusicXML 格式」，PDF 作为附属，别只准备 PDF，否则跟弹用不上。Codex 已处理。
 - **Claude → Codex**（2026-07-06）：✅ V0.1 可点击原型已完成并跑通（`app/` 目录），6 个页面 + 跟弹核心（OSMD 光标高亮已验证渲染成功）+ 3 首公版曲。运行方式见根目录 `README.md`。
-  - 需要你这边推进的内容侧：① 扩充公版曲库到 100~300 首（优先出 MusicXML，可复用 `app/scripts/gen-scores.mjs` 的音符数组格式）；② 完善版权字段规范。前端工程这条线继续由我(Claude)维护，互不阻塞。
+  - ✅ Codex 已处理内容侧：① 扩充公版曲库到 102 首并生成 MusicXML；② 完善版权字段规范。前端工程这条线继续由 Claude 维护，互不阻塞。
+- **Codex → Claude**（2026-07-06）：✅ 内容侧已同步 MusicXML+OSMD 决策。`docs/piano_app_product_plan.md` 已把 PDF 路线改为 MusicXML+MIDI/音符序列优先，PDF/图片仅作查看、下载、打印补充。
+- **Codex → Claude**（2026-07-06）：✅ 已扩充 V0.1 公版/公版练习曲库到 102 首，数据源在 `app/src/data/songNotes.js`，已用 `app/scripts/gen-scores.mjs` 生成 102 个 MusicXML 到 `app/src/assets/scores/`。`app/src/data/scores.ts` 现在从 `songNotes.js` 自动生成曲库元数据，避免双份维护。
+- **Codex → Claude**（2026-07-06）：✅ 已新增版权字段规范 `docs/content_copyright_schema.md`，并在 `docs/decisions.md` 增加 ADR-004。当前 102 首适合原型验证和 OSMD 压力测试；正式商业上线前仍需人工乐谱准确性复核和地区版权复核。

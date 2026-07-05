@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE score-partwise PUBLIC "-//Recordare//DTD MusicXML 3.1 Partwise//EN" "http://www.musicxml.org/dtds/partwise.dtd">
 <score-partwise version="3.1">
-  <work><work-title>玛丽有只小羊羔 Mary Had a Little Lamb</work-title></work>
+  <work><work-title>绿袖子 Greensleeves</work-title></work>
   <part-list>
     <score-part id="P1"><part-name>Piano</part-name></score-part>
   </part-list>
@@ -19,46 +19,51 @@
         <type>quarter</type>
       </note>
       <note>
-        <pitch><step>D</step><octave>4</octave></pitch>
+        <pitch><step>G</step><octave>4</octave></pitch>
         <duration>4</duration>
         <type>quarter</type>
       </note>
       <note>
-        <pitch><step>C</step><octave>4</octave></pitch>
-        <duration>4</duration>
-        <type>quarter</type>
-      </note>
-      <note>
-        <pitch><step>D</step><octave>4</octave></pitch>
-        <duration>4</duration>
-        <type>quarter</type>
-      </note>
-    </measure>
-    <measure number="2">
-      <note>
-        <pitch><step>E</step><octave>4</octave></pitch>
-        <duration>4</duration>
-        <type>quarter</type>
-      </note>
-      <note>
-        <pitch><step>E</step><octave>4</octave></pitch>
-        <duration>4</duration>
-        <type>quarter</type>
-      </note>
-      <note>
-        <pitch><step>E</step><octave>4</octave></pitch>
+        <pitch><step>A</step><octave>4</octave></pitch>
         <duration>8</duration>
         <type>half</type>
       </note>
     </measure>
-    <measure number="3">
+    <measure number="2">
       <note>
-        <pitch><step>D</step><octave>4</octave></pitch>
+        <pitch><step>B</step><octave>4</octave></pitch>
         <duration>4</duration>
         <type>quarter</type>
       </note>
       <note>
-        <pitch><step>D</step><octave>4</octave></pitch>
+        <pitch><step>C</step><octave>5</octave></pitch>
+        <duration>4</duration>
+        <type>quarter</type>
+      </note>
+      <note>
+        <pitch><step>B</step><octave>4</octave></pitch>
+        <duration>4</duration>
+        <type>quarter</type>
+      </note>
+      <note>
+        <pitch><step>A</step><octave>4</octave></pitch>
+        <duration>4</duration>
+        <type>quarter</type>
+      </note>
+    </measure>
+    <measure number="3">
+      <note>
+        <pitch><step>G</step><octave>4</octave></pitch>
+        <duration>4</duration>
+        <type>quarter</type>
+      </note>
+      <note>
+        <pitch><step>E</step><octave>4</octave></pitch>
+        <duration>4</duration>
+        <type>quarter</type>
+      </note>
+      <note>
+        <pitch><step>F</step><octave>4</octave></pitch>
         <duration>4</duration>
         <type>quarter</type>
       </note>
@@ -75,7 +80,7 @@
         <type>quarter</type>
       </note>
       <note>
-        <pitch><step>G</step><octave>4</octave></pitch>
+        <pitch><step>F</step><octave>4</octave></pitch>
         <duration>4</duration>
         <type>quarter</type>
       </note>
@@ -92,46 +97,24 @@
         <type>quarter</type>
       </note>
       <note>
-        <pitch><step>D</step><octave>4</octave></pitch>
-        <duration>4</duration>
-        <type>quarter</type>
-      </note>
-      <note>
-        <pitch><step>C</step><octave>4</octave></pitch>
+        <pitch><step>E</step><octave>4</octave></pitch>
         <duration>4</duration>
         <type>quarter</type>
       </note>
       <note>
         <pitch><step>D</step><octave>4</octave></pitch>
+        <duration>4</duration>
+        <type>quarter</type>
+      </note>
+      <note>
+        <pitch><step>E</step><octave>4</octave></pitch>
         <duration>4</duration>
         <type>quarter</type>
       </note>
     </measure>
     <measure number="6">
       <note>
-        <pitch><step>E</step><octave>4</octave></pitch>
-        <duration>4</duration>
-        <type>quarter</type>
-      </note>
-      <note>
-        <pitch><step>E</step><octave>4</octave></pitch>
-        <duration>4</duration>
-        <type>quarter</type>
-      </note>
-      <note>
-        <pitch><step>E</step><octave>4</octave></pitch>
-        <duration>4</duration>
-        <type>quarter</type>
-      </note>
-      <note>
-        <pitch><step>E</step><octave>4</octave></pitch>
-        <duration>4</duration>
-        <type>quarter</type>
-      </note>
-    </measure>
-    <measure number="7">
-      <note>
-        <pitch><step>D</step><octave>4</octave></pitch>
+        <pitch><step>F</step><octave>4</octave></pitch>
         <duration>4</duration>
         <type>quarter</type>
       </note>
@@ -141,21 +124,9 @@
         <type>quarter</type>
       </note>
       <note>
-        <pitch><step>E</step><octave>4</octave></pitch>
-        <duration>4</duration>
-        <type>quarter</type>
-      </note>
-      <note>
-        <pitch><step>D</step><octave>4</octave></pitch>
-        <duration>4</duration>
-        <type>quarter</type>
-      </note>
-    </measure>
-    <measure number="8">
-      <note>
-        <pitch><step>C</step><octave>4</octave></pitch>
-        <duration>16</duration>
-        <type>whole</type>
+        <pitch><step>B</step><octave>3</octave></pitch>
+        <duration>8</duration>
+        <type>half</type>
       </note>
     </measure>
   </part>
