@@ -3,6 +3,12 @@
 > 免费的钢琴曲谱与跟弹练习 App。核心差异化：**跟弹高亮**（谱面光标跟随 + 键盘同步点亮）。
 > 当前阶段：**V0.1 可点击原型**（React + Vite + PWA，手机浏览器可用，未接后端）。
 
+## 🌐 线上体验（GitHub Pages）
+
+**https://young-shiwu.github.io/piano-app/** — 已部署，手机/电脑任意打开，含 102 首公版曲。
+
+更新部署：改完代码后 `cd app && npm run build`，再把 `app/dist` 内容推到 `gh-pages` 分支即可。
+
 ## 两个 AI 怎么配合看这里
 
 - `AGENTS.md` —— Claude 和 Codex 的**协作约定 + 分工 + 已锁定的技术决策**。开工前先读。
